@@ -25,12 +25,12 @@ class Request
      * @param array $queryParams
      * @param array $server
      */
-    public function __construct(array $server = $_SERVER, array $cookies = $_COOKIE, array $queryParams = $_GET, array $post = $_POST)
+    public function __construct(array $server = null, array $cookies = null, array $queryParams = null, array $post = null)
     {
-        $this->data['server'] = $server;
-        $this->data['cookies'] = $cookies;
-        $this->data['queryParams'] = $queryParams;
-        $this->data['post'] = $post;
+        $this->data['server'] = ($server) ?? $_SERVER;
+        $this->data['cookies'] = ($cookies) ?? $_COOKIE;
+        $this->data['queryParams'] = ($queryParams) ?? $_GET;
+        $this->data['post'] = ($post) ?? $_POST;
     }
 
     /**
