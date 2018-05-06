@@ -8,7 +8,7 @@ namespace iamgold\http;
  * Initialize with $_SERVER.
  *
  * @author Eric Huang <iamgold0105@gmail.com>
- * @version 0.1.0
+ * @version 0.1.2
  */
 class Request
 {
@@ -41,7 +41,7 @@ class Request
      */
     public function getCookie($name)
     {
-        return ($this->cookie[$name]) ?? null;
+        return ($this->cookies[$name]) ?? null;
     }
 
     /**
