@@ -1,0 +1,17 @@
+{
+    "name": "iamgold/http",
+    "description": "This is a lightweight HTTP Request and Response manipulatation library.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Eric Huang",
+            "email": "iamgold0105@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+    },
+    "autoload": {
+        "psr-4": {"iamgold\\http\\": "src/"}
+    }
+}
