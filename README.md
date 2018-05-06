@@ -1,5 +1,5 @@
 # iamgold/http
-This is a lightweight HTTP Request and Response manipulatation library.
+This is a lightweight HTTP Request and Response manipulation library.
 
 # Usage
 ## Request
